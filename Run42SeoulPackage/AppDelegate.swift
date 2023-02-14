@@ -37,6 +37,14 @@ class AppDelegate: NSWorkspace, NSApplicationDelegate, URLSessionDelegate {
 		.init(title: "42 JIPHYEONJEON", action: #selector(self.jipheyonjeon(_:)), keyEquivalent: "")
 	}
 	
+	var HANE24: NSMenuItem! {
+		.init(title: "24 HANE", action: #selector(self.tfHANE(_:)), keyEquivalent: "")
+	}
+	
+	var coding80000: NSMenuItem! {
+		.init(title: "80k Coding", action: #selector(self.eightyK(_:)), keyEquivalent: "")
+	}
+	
 	var about42Pack: NSMenuItem! {
 		.init(title: "About 42 Pack", action: #selector(self.showAbout(_:)), keyEquivalent: "")
 	}
@@ -66,6 +74,8 @@ class AppDelegate: NSWorkspace, NSApplicationDelegate, URLSessionDelegate {
 		mainMenu.addItem(NSMenuItem.separator())
 		mainMenu.addItem(intra42)
 		mainMenu.addItem(jip42)
+		mainMenu.addItem(HANE24)
+		mainMenu.addItem(coding80000)
 		mainMenu.addItem(NSMenuItem.separator())
 		mainMenu.addItem(logoList)
 		mainMenu.addItem(NSMenuItem.separator())
@@ -101,16 +111,10 @@ class AppDelegate: NSWorkspace, NSApplicationDelegate, URLSessionDelegate {
 	}
 	
 	@objc func submenuDrop(_ sender: NSStatusBarButton) {
-		print(sender)
-		
 		let event = NSApp.currentEvent!
 		if event.type == NSEvent.EventType.rightMouseDown {
-			print("Right Click subMenu drop")
 			statusBarItem.menu = nil
-			// insert your right-click method here
 		} else {
-			print("Left Click subMenu drop")
-			// insert your left-click method here
 			statusBarItem.menu = nil
 		}
 	}
@@ -120,12 +124,8 @@ class AppDelegate: NSWorkspace, NSApplicationDelegate, URLSessionDelegate {
 		
 		let event = NSApp.currentEvent!
 		if event.type == NSEvent.EventType.rightMouseDown {
-			print("Right Click")
 			statusBarItem.menu = nil
-			// insert your right-click method here
 		} else {
-			print("Left Click")
-			// insert your left-click method here
 			statusBarItem.menu = mainMenu
 			statusBarItem.button?.performClick(nil)
 			statusBarItem.menu = nil
@@ -142,7 +142,6 @@ class AppDelegate: NSWorkspace, NSApplicationDelegate, URLSessionDelegate {
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		barButtonInit()
 		menuListInit()
-		//		statusBarItem.menu?.performActionForItem(at: 0)
 		startRunning()
 	}
 	
@@ -311,9 +310,17 @@ class AppDelegate: NSWorkspace, NSApplicationDelegate, URLSessionDelegate {
 	// MARK: - 42 JIP feature (link)
 	
 	@objc func jipheyonjeon(_ sender: NSMenuItem) {
-		//		let urlString = ""
-		//		NSWorkspace.shared.open(URL(string: "https://42library.kr/search?string=\(urlString)&page=1&category=0&sort=title")!)
 		NSWorkspace.shared.open(URL(string: "https://42library.kr")!)
 	}
 	
+	// MARK: - 42 24 HANE (link)
+	
+	@objc func tfHANE(_ sender: NSMenuItem) {
+		NSWorkspace.shared.open(URL(string: "https://24hoursarenotenough.42seoul.kr/")!)
+	}
+	
+	// MARK: - 42 80000coding (link)
+	@objc func eightyK(_ sender: NSMenuItem) {
+		NSWorkspace.shared.open(URL(string: "https://80000coding.oopy.io/")!)
+	}
 }
