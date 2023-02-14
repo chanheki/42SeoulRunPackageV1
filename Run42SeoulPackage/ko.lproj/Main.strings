@@ -1,0 +1,42 @@
+
+/* Class = "NSMenuItem"; title = "Run42Pack"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "42Seoul Run Package";
+
+/* Class = "NSMenuItem"; title = "Quit Run42Pack"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "42Seoul Run Package 나가기";
+
+/* Class = "NSMenuItem"; title = "About Run42Pack"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "42Seoul Run Package에 대해";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "메인 메뉴";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "설정";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "전부 보이기";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "서비스";
+
+/* Class = "NSMenuItem"; title = "Hide Run42Pack"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Run42Pack 숨기기";
+
+/* Class = "NSMenuItem"; title = "Show CPU Usage"; ObjectID = "Ul4-P8-BfI"; */
+"Ul4-P8-BfI.title" = "CPU 사용량";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "전부 숨기기";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "서비스";
+
+/* Class = "NSMenuItem"; title = "About Run 42 Pack"; ObjectID = "kSl-ml-8TJ"; */
+"kSl-ml-8TJ.title" = "Run 42 Package에 대해";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "r4E-Vw-Ney"; */
+"r4E-Vw-Ney.title" = "나가기";
+
+/* Class = "NSMenu"; title = "Run42Pack"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "42Seoul Run Package";
